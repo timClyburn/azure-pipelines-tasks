@@ -16,7 +16,7 @@
     ],
     "version": {
         "Major": 1,
-        "Minor": 201,
+        "Minor": 239,
         "Patch": 0
     },
     "minimumAgentVersion": "1.95.0",
@@ -102,6 +102,10 @@
     "execution": {
         "Node10": {
             "target": "nlbtask.js"
+        },
+        "Node16": {
+            "target": "nlbtask.js",
+            "argumentFormat": ""
         }
     },
     "messages": {

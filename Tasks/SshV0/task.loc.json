@@ -17,11 +17,11 @@
   "author": "Microsoft Corporation",
   "version": {
     "Major": 0,
-    "Minor": 200,
+    "Minor": 238,
     "Patch": 0
   },
   "demands": [],
-  "minimumAgentVersion": "2.144.0",
+  "minimumAgentVersion": "2.206.1",
   "instanceNameFormat": "ms-resource:loc.instanceNameFormat",
   "groups": [
     {
@@ -135,10 +135,19 @@
         "expression": "isMatch(value, '(^\\d*$)','Multiline')",
         "message": "Enter a valid value for timeout."
       }
+    },
+    {
+      "name": "interactiveKeyboardAuthentication",
+      "type": "boolean",
+      "label": "ms-resource:loc.input.label.interactiveKeyboardAuthentication",
+      "defaultValue": false,
+      "required": false,
+      "groupName": "advanced",
+      "helpMarkDown": "ms-resource:loc.input.help.interactiveKeyboardAuthentication"
     }
   ],
   "execution": {
-    "Node10": {
+    "Node16": {
       "target": "ssh.js",
       "argumentFormat": ""
     }
@@ -152,6 +161,7 @@
     "RemoteScriptFileCleanUpFailed": "ms-resource:loc.messages.RemoteScriptFileCleanUpFailed",
     "SettingUpSshConnection": "ms-resource:loc.messages.SettingUpSshConnection",
     "SshConnectionSuccessful": "ms-resource:loc.messages.SshConnectionSuccessful",
-    "UseDefaultPort": "ms-resource:loc.messages.UseDefaultPort"
+    "UseDefaultPort": "ms-resource:loc.messages.UseDefaultPort",
+    "ScriptArgsSanitized": "ms-resource:loc.messages.ScriptArgsSanitized"
   }
 }

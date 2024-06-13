@@ -9,13 +9,13 @@
     "author": "Microsoft Corporation",
     "version": {
         "Major": 1,
-        "Minor": 199,
+        "Minor": 238,
         "Patch": 0
     },
     "groups": [],
     "demands": [],
     "preview": false,
-    "minimumAgentVersion": "2.199",
+    "minimumAgentVersion": "2.199.0",
     "inputs": [
         {
             "name": "path",
